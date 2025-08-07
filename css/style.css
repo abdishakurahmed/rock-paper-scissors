@@ -17,6 +17,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   margin-top: 5rem;
+  color: #17313e;
 }
 
 input,
@@ -44,8 +45,25 @@ p {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  align-items: center;
 }
 
 .explanation-p {
   font-size: 0.9rem;
+  padding-top: 0.5rem;
+}
+
+.start-btn-game {
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  background-color: #c5b0cd;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.start-btn-game:hover {
+  border: 1px solid #415e72;
+  transform: scale(1.1);
+  transition: transform 300ms ease-in-out;
 }
