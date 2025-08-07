@@ -15,7 +15,7 @@ This document outlines the design decisions for the Rock Paper Scissors game int
 | Element        | Desktop Size | Mobile Size |
 | -------------- | ------------ | ----------- |
 | Base Text      | 16px         | 14px        |
-| Headings       | 2rem         | 1.5rem      |
+| Headings       | 2.5rem       | 1.5rem      |
 | Buttons        | 1.2rem       | 1rem        |
 | Result Message | 1.5rem       | 1.2rem      |
 

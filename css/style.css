@@ -35,3 +35,12 @@ select {
 }
 
 /*above were all the default styles i set and below will be the custom ones*/
+
+.title {
+  font-size: 2.5rem;
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+}
