@@ -67,3 +67,23 @@ p {
   transform: scale(1.1);
   transition: transform 300ms ease-in-out;
 }
+
+img {
+  max-width: 100%;
+}
+
+.imgrps {
+  width: 200px;
+  height: auto;
+  border: 2px solid rgb(65, 94, 114);
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.rock-paper-scissor {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  column-gap: 1rem;
+}
