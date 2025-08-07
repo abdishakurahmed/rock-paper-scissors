@@ -16,22 +16,20 @@ body {
   font-family: "Mozilla Headline", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
+  margin-top: 5rem;
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  display: inline;
+}
+
+p {
+  font-family: "Inter", sans-serif;
 }
 
 /*above were all the default styles i set and below will be the custom ones*/
@@ -42,5 +40,12 @@ select {
 
 .main-body {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
+}
+
+.explanation-p {
+  font-size: 0.9rem;
 }
