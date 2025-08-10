@@ -15,3 +15,13 @@ function getComputerChoice(choices) {
    const gameChoice = Math.floor(Math.random() * choices.length);
    return choices[gameChoice];
 }
+
+// this will listen for the player choices and what the player touches clickes
+gameContainer.addEventListener('click', getPlayerChoice);
+
+function getPlayerChoice(event) {
+// toLowerCase() is just for future proofing both here and the the function getComputerChoice() function so yeah just know that and dont be suprissed
+   const playerChoice = event.target.className.toLowerCase();
+   console.log(playerChoice)
+   return playerChoice;
+}
