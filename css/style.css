@@ -80,6 +80,12 @@ img {
   border-radius: 2px;
 }
 
+.imgrps:hover {
+  background-color: #e6d5c7;
+  border-radius: 4px;
+  transition: border-radius 300ms ease, background-color 300ms ease;
+}
+
 .rock-paper-scissor {
   margin-top: 2rem;
   display: grid;
