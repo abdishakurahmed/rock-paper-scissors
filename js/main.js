@@ -13,7 +13,7 @@ function getComputerChoice(choices) {
       throw new Error("Choices have to be an array and must have values in it.");
    }
    const gameChoice = Math.floor(Math.random() * choices.length);
-   return choices[gameChoice];
+   return choices[gameChoice].toLowerCase();
 }
 
 // this will listen for the player choices and what the player touches clickes
@@ -22,6 +22,25 @@ gameContainer.addEventListener('click', getPlayerChoice);
 function getPlayerChoice(event) {
 // toLowerCase() is just for future proofing both here and the the function getComputerChoice() function so yeah just know that and dont be suprissed
    const playerChoice = event.target.className.toLowerCase();
-   console.log(playerChoice)
    return playerChoice;
+}
+
+function determineWinner(player, computer) {
+    let result;
+   if(player === computer) {
+       result = `it's a draw, you've chosen ${player} and the computer chose ${computer}`
+   } else if (player === 'paper' && computer === 'rock') {
+       result = `you've won. you chose ${player} and the computer chose ${computer}`
+   } else if (player === 'rock' && computer === 'scissors') {
+       result = `you've won. you chose ${player} and the computer chose ${computer}`
+   } else if (player === 'scissors' && computer === 'paper') {
+       result = `you've won. you chose ${player} and the computer chose ${computer}`
+   } else if (computer === 'paper' && player === 'rock') {
+       result = `You've lost and the computer Won. you chose ${player} and the computer chose ${computer}`
+   } else if (computer === 'rock' && player === 'scissors') {
+       result = `You've lost and the computer Won. you chose ${player} and the computer chose ${computer}`
+   } else if (computer === 'scissors' && player === 'paper') {
+       result = `You've lost and the computer Won. you chose ${player} and the computer chose ${computer}`
+   }
+   return result
 }
