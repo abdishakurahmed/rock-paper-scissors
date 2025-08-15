@@ -74,7 +74,9 @@ img {
   max-width: 100%;
 }
 
-.rock, .paper, .scissors {
+.rock,
+.paper,
+.scissors {
   width: 200px;
   height: auto;
   border: 2px solid rgb(65, 94, 114);
@@ -82,7 +84,9 @@ img {
   border-radius: 2px;
 }
 
-.rock:hover, .paper:hover, .scissors:hover {
+.rock:hover,
+.paper:hover,
+.scissors:hover {
   background-color: #e6d5c7;
   border-radius: 4px;
   transition: border-radius 300ms ease, background-color 300ms ease;
@@ -99,6 +103,7 @@ img {
 .result {
   padding-left: 10rem;
   padding-top: 1rem;
+  padding-right: 10rem;
 }
 
 .winner {
@@ -106,4 +111,5 @@ img {
   font-weight: bold;
   font-style: italic;
   font-family: "Mozilla Headline" sans-serif;
+  text-align: center;
 }
