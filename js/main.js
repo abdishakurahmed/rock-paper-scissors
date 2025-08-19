@@ -20,7 +20,8 @@ gameContainer.addEventListener("click", getPlayerChoice);
 
 function getPlayerChoice(event) {
   // toLowerCase() is just for future proofing both here and the the function getComputerChoice() function so yeah just know that and dont be suprissed
-  const playerChoice = event.target.className.toLowerCase();
+  const playerChoice = event.target.dataset.choice;
+  if (!playerChoice) return;
   const computer = getComputerChoice(choices);
   const winners = determineWinner(playerChoice, computer);
   displayResult(winners);
